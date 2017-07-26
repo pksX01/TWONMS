@@ -1,0 +1,26 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+ 
+int main()
+{
+    int t;
+    //cout<<"t="<<endl;
+    cin>>t;
+    while(t--)
+    {
+        long long a,b,n;
+        //cout<<"a,b,n="<<endl;
+        cin>>a>>b>>n;
+ 
+        for(int i=0;i<ceil(double(n)/2);i++)
+            a=a*2;
+           //cout<<"a="<<a<<endl;
+        for(int j=0;j<floor(n/2);j++)
+            b=b*2;
+            //cout<<"b="<<b<<endl;
+        cout<<max(a,b)/min(a,b)<<"\n";
+    }
+ 
+}
+ 
